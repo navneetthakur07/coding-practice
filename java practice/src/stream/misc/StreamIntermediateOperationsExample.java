@@ -1,4 +1,4 @@
-package stream;
+package stream.misc;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -21,6 +21,7 @@ public class StreamIntermediateOperationsExample {
                 .map(String::toUpperCase)
                 .distinct()
                 .sorted()
+                .skip(1)
                 .peek(s-> intermediateOperation.add(s))
                 .toList();
 

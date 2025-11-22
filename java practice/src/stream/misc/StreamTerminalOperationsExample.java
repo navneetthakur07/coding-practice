@@ -1,4 +1,4 @@
-package stream;
+package stream.misc;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -44,8 +44,9 @@ public class StreamTerminalOperationsExample {
         findFirst.ifPresent(System.out::println);
         System.out.println(blankList.isEmpty());
 
-        // if you want to use findFirst() then you have to use HashSet, or Deque
         blankList.addFirst("Sanjay");
+        Optional<String> temp = blankList.stream().findFirst();
+        System.out.println("temp:" + temp);
         System.out.println(blankList);
         System.out.println(blankList.isEmpty());
 
