@@ -45,8 +45,8 @@ public class Solution {
  *         Predicate<Integer> isEven = x-> x % 2 == 0;
  *         System.out.println(isEven.test(4));
  *
- *         Consumer<String> print = System.out::println;
- *         print.accept("Consumer testing.");
+ *         Consumer<String> hello = System.out::println;
+ *         hello.accept("Consumer testing.");
  *
  *         Supplier<Double> random = Math::random;
  *         System.out.println((int)(random.get()*100));
