@@ -10,13 +10,13 @@ public class SecondHighestNumberInAList {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         List<Integer> arrayList = new ArrayList<>(numbers);
-//        Integer secondHighest = numbers.stream()
-//                .sorted((a,b)-> b.compareTo(a))
-//                .skip(1)
-//                .findFirst()
-//                .get();
-//
-//        System.out.println(secondHighest);
+        Integer secondHighest = numbers.stream()
+                .sorted((a,b)-> b.compareTo(a))
+                .skip(1)
+                .findFirst()
+                .get();
+
+        System.out.println(secondHighest);
         Collections.reverse(arrayList);
         System.out.println(arrayList.get(1));
 

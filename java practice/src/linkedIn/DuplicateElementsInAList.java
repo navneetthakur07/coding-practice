@@ -29,7 +29,7 @@ public class DuplicateElementsInAList {
             }
         }
 
-        // Alternative to the above approach
+        // Alternative to the above approaches
 
         System.out.println("Using modern approach of for each");
         map.forEach((word, count) -> {             // Gets both key and value directly
